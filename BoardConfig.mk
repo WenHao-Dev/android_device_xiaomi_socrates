@@ -16,14 +16,14 @@ TARGET_SCREEN_DENSITY := 540
 BOARD_VENDOR_KERNEL_MODULES_LOAD += \
     wl2866d.ko \
     xiaomi_touch.ko \
-    goodix_core.ko \
+    goodix_ts.ko \
     goodix_fod.ko
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += \
-    goodix_core.ko
+    goodix_ts.ko
 
 BOOT_KERNEL_MODULES += \
-    goodix_core.ko
+    goodix_ts.ko
 
 # System properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
